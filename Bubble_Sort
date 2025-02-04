@@ -1,0 +1,8 @@
+
+ar=[11,45,78,32]
+n=len(ar)
+for i in range(n-1):
+    for j in range(n-i-1):
+        if ar[j]>=ar[j+1]:
+            ar[j],ar[j+1]=ar[j+1],ar[j]
+print("Sorted Array:",ar)
